@@ -18,11 +18,37 @@ class Team:
 		# Take the values given and save them in our object
 		self.TeamName = Name
 
-	# A method which updates team stats
-	def UpdateTeam (self):
+	# A method which updates Goals and Points
+	def UpdateGandP (self):
 
+		# Make up a result and home/away status
+		HA = 1 # 1 = home 0 = away?
 		result = [3,2]
-		print (result)
+
+		if HA == 1:
+			self.GoalsScored = GoalsScored + result[1]
+			self.GoalsConceeded = GoalsConceeded + result[2]
+
+			# Calculate if team has won drawn or lost and add points
+			if result[1]>result[2]:
+				self.Point = self.Point + 3
+			elif result[1]==result[2]:
+				self.Point = self.Point + 1
+			elif result[1]<result[2]:
+				self.Point = self.Point + 0
+
+		else:
+			self.GoalsScored = self.GoalsScored + result[2]
+			self.GoalsConceeded = self.GoalsConceeded + result[1]
+
+			# Calculate if team has won drawn or lost (WDL) 
+			if result[1]<result[2]:
+				self.Point = self.Point + 3
+			elif result[1]==result[2]:
+				self.Point = self.Point + 1
+			elif result[1]>result[2]:
+				self.Point = self.Point + 0
+				
 
 	# A method for adding a player
 	def AddPlayer (self, PlayerName):
@@ -58,3 +84,5 @@ class Team:
 				print '           ', self.PlayerList[i]
 
 			print '\n'
+
+	
