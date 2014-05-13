@@ -11,7 +11,7 @@ class League:
 	TeamList  = []  # A list of the teams in the league
 
 	# The class' 'constructor' i.e. what happens when we create a 'League' object
-	def __init__ (self, Name = 'Premier League', Size = 20):
+	def __init__ (self, Name, Size):
 
 		# Take the values given and save them in our object
 		self.TeamName  = Name
