@@ -30,7 +30,6 @@ class League:
 		# If the league has no teams do this
 		if len(self.TeamList) == 0:
 			print '      League currently empty!'
-			return 0
 
 		# Otherwise print out the names
 		else:
@@ -50,6 +49,14 @@ class League:
 
 		# Sort the list of team names alphabetically
 		self.TeamList = sorted(self.TeamList, key = str.lower)
+
+	# A 'method' which removes a team from the 'TeamList' list
+	# Useful if, for instance, a team has been relegated
+	def RemoveTeam (self, TeamName):
+
+		# If the team is in 'TeamList' remove
+		if TeamName in self.TeamList:
+			self.TeamList.remove(TeamName)
 
 # Class definition ends here
 
