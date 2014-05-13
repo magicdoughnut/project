@@ -1,7 +1,8 @@
 #!/bin/python
 
-# Import the class definition for a generic league
+# Import the class definition for a generic league and team
 from LeagueClass import League
+from TeamClass   import Team
 
 # Let's set up a really simple league!
 MyLeague = League('The Cornish First Division', 2)
