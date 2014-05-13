@@ -7,7 +7,7 @@ class League:
 
 	# Member objects of our class
 	TeamName  = ''	# The name of the league we want to model
-	TeamCount = -1  # The number of teams in our league
+	TeamCount =  0  # The number of teams in our league
 	TeamList  = []  # A list of the teams in the league
 
 	# The number of teams to be promoted/relegated
@@ -29,7 +29,7 @@ class League:
 	# A 'method' which prints out the names of the teams in the league
 	def PrintTeams (self):
 
-		print '\n   -> Team Name:', self.TeamName
+		print '\n   -> League Name:', self.TeamName
 
 		# If the league has no teams do this
 		if len(self.TeamList) == 0:
