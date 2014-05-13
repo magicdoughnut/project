@@ -43,7 +43,7 @@ class Team:
 			Points   += 3
 			GamesWon += 1
 		# If we Drew
-		else if GoalsConceeded == GoalsConceeded:
+		elif GoalsConceeded == GoalsConceeded:
 			Points     += 1
 			GamesDrawn += 1
 		# If we Lost

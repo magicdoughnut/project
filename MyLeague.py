@@ -3,6 +3,7 @@
 # Import the class definition for a generic league and team
 from LeagueClass import League
 from TeamClass   import Team
+#from Match import Score
 
 # Let's set up a really simple league!
 MyLeague = League('The Cornish First Division', 2)
@@ -20,3 +21,4 @@ MyLeague.RemoveTeam('Bastard United')
 
 # Print out all the teams in our league again
 MyLeague.PrintTeams()
+
