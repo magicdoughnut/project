@@ -26,7 +26,7 @@ class League:
 	def GetTeamCount (self):
 		return len(self.TeamList)
 
-	# A 'method' which prints out the names of the teams in the league
+	# A method which prints out the names of the teams in the league
 	def PrintTeams (self):
 
 		print '\n   -> League Name:', self.TeamName
@@ -45,7 +45,7 @@ class League:
 
 			print '\n'
 
-	# A 'method' which adds a team to the 'TeamList' list
+	# A method which adds a team to the 'TeamList' list
 	def AddTeam (self, TeamName):
 
 		# Add the name to the league
@@ -54,7 +54,7 @@ class League:
 		# Sort the list of team names alphabetically
 		self.TeamList = sorted(self.TeamList, key = str.lower)
 
-	# A 'method' which removes a team from the 'TeamList' list
+	# A method which removes a team from the 'TeamList' list
 	# Useful if, for instance, a team has been relegated
 	def RemoveTeam (self, TeamName):
 
@@ -63,6 +63,3 @@ class League:
 			self.TeamList.remove(TeamName)
 
 # Class definition ends here
-
-
-#extra comment to try to work out wtf GIT is playing at...   
