@@ -10,6 +10,10 @@ class League:
 	TeamCount = -1  # The number of teams in our league
 	TeamList  = []  # A list of the teams in the league
 
+	# The number of teams to be promoted/relegated
+	RelegCount = 3
+	PromoCount = 3
+
 	# The class' 'constructor' i.e. what happens when we create a 'League' object
 	def __init__ (self, Name, Size):
 
