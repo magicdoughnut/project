@@ -4,8 +4,8 @@ import time
 import datetime
 import os.path
 
-my_api_key = "AIzaSyC3NZtZc_gYxXjzrCkJRAGP1NhgQRJ-MpU"
-my_cse_id = "002015482507943929307:yxpcz2havuy"
+my_api_key = "xxxxxxxxxxxxxx"
+my_cse_id = "xxxxxxxxxxxxx"
 
 
 def google_search(search_term, api_key, cse_id, **kwargs):
