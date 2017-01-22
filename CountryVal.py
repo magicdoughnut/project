@@ -49,9 +49,6 @@ for i in range(0,polys.numRecords):
 	# poly = polys.iterShapes().next().__geo_interface__
 	no = geomet[i]
 	GISname = no.record[4]
-	# if GISname[1:-1] == 'land Islands':
-	# 	GISname = 'Island4000'
-	# 	print fuck*100
 	if GISname == "Italy":
 		print "ITALY"*20
 		print poly['type']
